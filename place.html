@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Gerald Tatenda Nyamangwende</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Gerald Tatenda Nyamangwende's Place page">
+
+    <meta name="author" content="Gerald Tatenda Nyamangwende">
+
+    <link rel="stylesheet" href="../wdd131/styles/place.css">
+
+    <link rel="stylesheet" href="../wdd131/styles/place-large.css">
+
+    <script src="../wdd131/scripts/place.js" defer ></script>
+
+    <script src="../wdd131/scripts/getdates.js" defer ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="..//wdd131/styles/fonts.googleapis.com" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Harare, Zimbabwe</h1>
+
+    </header>
+    <main>
+        <picture>
+
+            <source srcset="../wdd131/images/zimbabwe-large.jpeg" media="(max-width: 550px)">
+            <img src="../wdd131/images/zimbabwe-large.jpeg" alt="Harare" class="miniscreen" width="700" height="1000">
+
+            <source srcset="..//wdd131/images/zimbabwe-1.jpeg" media="(max-width: 950px)">
+            <img src="../wdd131/images/zimbabwe1.jpeg" alt="Harare" class="miniscreen" width="700" height="1000">
+
+            <img src="../wdd131/images/zimbabwe-capital.jpeg" alt="Harare" class="miniscreen" width="700" height="1000">
+
+        </picture>
+        <section class="summary dataSummary">
+
+            <h3>Data</h3>
+
+            <div><span class="summaryTitle">Area</span><span>:</span><span>390,757 km²</span></div>
+
+            <div><span class="summaryTitle">Population</span><span>:</span><span>16,969,458</span></div>
+
+            <div><span class="summaryTitle">Capital</span><span>:</span><span>Harare</span></div>
+
+            <div><span class="summaryTitle">Language</span><span>:</span><span>Shona</span></div>
+
+            <div><span class="summaryTitle">Currency</span><span>:</span><span>Zimbabwean Dollar</span></div>
+
+            <div><span class="summaryTitle">Timezone</span><span>:</span><span>GMT+2</span></div>
+
+            <div><span class="summaryTitle">Calling Code</span><span>:</span><span>+263</span></div>
+
+            <div><span class="summaryTitle">Internet TLD</span><span>:</span><span>.zw</span></div>
+
+        </section>
+        <section class="summary weatherSummary">
+
+            <h3 class="weather">
+
+                Weather
+            </h3>
+
+              <img src="images/weather-icon.svg" alt="weather-icon">
+
+            <div><span class="summaryTitle">Temperature</span><span>:</span><span id="temperature">23°C</span></div>
+
+            <div><span class="summaryTitle">Condition</span><span>:</span> <span>Sunny</span></div>
+
+            <div><span class="summaryTitle">Wind Speed</span><span>:</span><span id="wind">10Km/h</span></div>
+
+            <div><span class="summaryTitle">Wind Chill</span><span>:</span><span id="chillWind">°C</span></div>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span> ©</span>
+
+            <span id="currentyear"></span>
+
+            <span>❤ Gerald Tatenda Nyamangwende ❤</span>
+
+            <span>Kadoma, Zimbabwe.</span>
+
+        </p>
+        <p id="lastModified">
+
+        </p>
+    </footer>
+</body>
+
+</html>
